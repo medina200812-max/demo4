@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 900px;
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: auto;
+        gap: 150px;
+      }
+      .top-box {
+        width: 900px;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(3, 200px);
+        position: relative;
+      }
+      .text {
+        position: absolute;
+        top: 170px;
+        width: 250px;
+        right: 110px;
+      }
+      .button {
+        color: white;
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        background-color: black;
+        border: none;
+      }
+      .button:hover {
+        background-color: gray;
+      }
+      .box1 {
+        background-color: black;
+        grid-row: 1/4;
+        grid-column: 1/2;
+
+        z-index: 1;
+      }
+      .box2 {
+        background-image: url(images/photo-1.png);
+        grid-row: 1/4;
+        grid-column: 2/3;
+      }
+      .box3 {
+        background-color: white;
+        grid-row: 1/4;
+        grid-column: 3/4;
+        position: relative;
+      }
+      .heading {
+        position: absolute;
+        z-index: 3;
+        color: white;
+        left: 75px;
+        font-size: 50px;
+        top: 95px;
+      }
+      .heading-2 {
+        position: absolute;
+        z-index: 2;
+        color: rgb(0, 0, 0);
+        left: 85px;
+        font-size: 50px;
+        top: 95px;
+      }
+
+      .end-box {
+        width: 900px;
+        display: grid;
+        grid-template-columns: repeat(5, 178px);
+        grid-template-rows: repeat(3, 300px);
+        gap: 10px;
+      }
+      .con1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-color: white;
+        padding: 30px;
+      }
+      .con2 {
+        grid-column: 3/6;
+        grid-row: 1/2;
+        background-color: rgb(85, 255, 29);
+      }
+      .con3 {
+        grid-column: 1/4;
+        grid-row: 2/4;
+        background-color: rgb(15, 255, 187);
+      }
+      .con4 {
+        grid-column: 4/6;
+        grid-row: 2/3;
+        background-color: rgb(10, 10, 10);
+      }
+      .con5 {
+        grid-column: 4/6;
+        grid-row: 3/4;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+      }
+      .photo {
+        width: 100%;
+        height: 100%;
+      }
+      .end {
+        background-color: black;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 50px;
+        gap: 80px;
+      }
+      .write {
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .black-text {
+        color: black;
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      p {
+        color: gray;
+      }
+      .button-div {
+        display: flex;
+
+        width: 250px;
+        height: 50px;
+      }
+      .orange-box {
+        background-color: rgb(254, 175, 105);
+        width: 40px;
+        height: 50px;
+      }
+      @media screen and (max-width: 750px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-box">
+        <h1 class="heading">MODERN <br />ART GAL</h1>
+        <h1 class="heading-2">
+          MODERN<br />
+          ART GALLERY
+        </h1>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3">
+          <div class="text">
+            <p>
+              The arts in the collection of the Modern art Gallery all started
+              from a spark of inspiration.Will these pieces inspire you?Visis us
+              and find out
+            </p>
+            <div class="button-div">
+              <button class="button">
+                <a style="color: white" href="location.html">Location</a>
+              </button>
+              <div class="orange-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="end-box">
+        <div class="con1">
+          <h1 class="black-text">YOUR DAY AT THE GALLERY</h1>
+          <p>
+            Wander through our distinct collections and find new insights about
+            our artists .Dive inyo the details of their creative process
+          </p>
+        </div>
+        <div class="con2">
+          <img class="photo" src="images/photo-2.png" />
+        </div>
+        <div class="con3"><img class="photo" src="images/photo-3.png" /></div>
+        <div class="con4"><img class="photo" src="images/photo-4.png" /></div>
+        <div class="con5">
+          <h1 class="write">COME & BE INSPIRED</h1>
+          <p style="color: rgb(147, 146, 146)">
+            We are excited to welcome you to our gallery and see how our
+            collections influence you
+          </p>
+        </div>
+      </div>
+      <div class="end">
+        <h1 class="write">
+          MODERN ART<br />
+          GALLERY
+        </h1>
+        <p>
+          The modern art gallery is free to all visitors to all visitors and
+          open<br />
+          seven days a week from 8 am at 9pm .Find us at 99<br />
+          King Street ,Newport ,Usa
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
